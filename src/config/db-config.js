@@ -12,6 +12,7 @@ export default async function conectarBanco(stringConexao){
         return mongoClient;
     } catch (erro){
         console.error('Falha na conexão com o MongoDB');
+        console.log(erro);
         process.exit();
     }
 }
